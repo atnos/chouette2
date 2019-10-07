@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :async, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :openid_connect]
+         :confirmable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :openid_connect]
 
   # Setup accessible (or protected) attributes for your model
   # attr_accessible :email, :password, :current_password, :password_confirmation, :remember_me, :name, :organisation_attributes

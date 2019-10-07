@@ -43,7 +43,7 @@ gem 'figaro', '~> 1.1.1'
 
 platforms :ruby do
   gem 'therubyracer', '~> 0.12'
-  gem 'pg'
+  gem 'pg', '~> 0.21'
   # gem 'sqlite3'
 end
 
@@ -51,7 +51,7 @@ gem 'activerecord-postgis-adapter', '~> 3.1.4'
 gem 'polylines'
 
 # Authentication
-gem 'devise', '~> 3.5.10'
+gem 'devise', '~> 4.7.1'
 gem 'devise-encryptable'
 gem 'devise_invitable'
 gem 'omniauth'
@@ -105,7 +105,7 @@ gem 'acts_as_tree', '~> 2.1.0', require: 'acts_as_tree'
 gem 'rabl'
 
 gem 'delayed_job_active_record'
-gem 'devise-async'
+# gem 'devise-async'
 gem 'apartment', '~> 1.0.0'
 
 gem 'newrelic_rpm'
