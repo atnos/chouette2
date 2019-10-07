@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'bundler', '~> 1.13.6'
+gem 'bundler', '~> 1.17.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.7'
 
@@ -44,7 +44,7 @@ gem 'figaro', '~> 1.1.1'
 platforms :ruby do
   gem 'therubyracer', '~> 0.12'
   gem 'pg'
-  gem 'sqlite3'
+  # gem 'sqlite3'
 end
 
 gem 'activerecord-postgis-adapter', '~> 3.1.4'
@@ -79,7 +79,7 @@ gem 'font-awesome-sass', '~> 4.2.0'
 gem 'breadcrumbs_on_rails'
 
 # Format Output
-gem 'json'
+gem 'json', '~> 1.8'
 gem 'rubyzip', '~> 1.1.7'
 gem 'roo'
 
