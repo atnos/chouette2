@@ -39,7 +39,7 @@ gem 'spring', '~> 1.7.2', group: :development
 gem 'sawyer', '~> 0.6.0'
 gem 'faraday_middleware', '~> 0.10.0'
 
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
 
 gem 'mini_racer'
 gem 'pg', '~> 0.21'
