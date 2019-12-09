@@ -1,3 +1,7 @@
+# Version 4.0.0 beta (08/10/2019)
+  * Mise à jour de Rails
+  * Mise à jour des dépendances
+
 # Version 3.4.1 (15/01/2017)
   * Nouvelles fonctionnalités :
     * Connection possible avec un compte Google, Facebook ou FranceConnect

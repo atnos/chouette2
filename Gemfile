@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bundler', '~> 1.17.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 4.2.11.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -39,19 +39,16 @@ gem 'spring', '~> 1.7.2', group: :development
 gem 'sawyer', '~> 0.6.0'
 gem 'faraday_middleware', '~> 0.10.0'
 
-gem 'figaro', '~> 1.1.1'
+gem 'dotenv-rails', groups: [:development, :test]
 
-platforms :ruby do
-  gem 'therubyracer', '~> 0.12'
-  gem 'pg', '~> 0.21'
-  # gem 'sqlite3'
-end
+gem 'mini_racer'
+gem 'pg', '~> 0.21'
 
-gem 'activerecord-postgis-adapter', '~> 3.1.4'
+gem 'activerecord-postgis-adapter', '~> 3.1.5'
 gem 'polylines'
 
 # Authentication
-gem 'devise', '~> 4.7.1'
+gem 'devise'
 gem 'devise-encryptable'
 gem 'devise_invitable'
 gem 'omniauth'

@@ -14,22 +14,24 @@ class Users::RegistrationsController < Devise::RegistrationsController
   protected
 
   def configure_sign_up_params
-    devise_parameter_sanitizer.for(:sign_up).push(
-      :name,
-      :email,
-      :password,
-      :password_confirmation,
-      organisation_attributes: [:name]
+    devise_parameter_sanitizer.permit(:sign_up, keys: [
+        :name,
+        :email,
+        :password,
+        :password_confirmation,
+        organisation_attributes: [:name]
+      ]
     )
   end
 
   def configure_account_update_params
-    devise_parameter_sanitizer.for(:account_update).push(
-      :name,
-      :email,
-      :password,
-      :password_confirmation,
-      :current_password
+    devise_parameter_sanitizer.permit(:account_update, keys: [
+        :name,
+        :email,
+        :password,
+        :password_confirmation,
+        :current_password
+      ]
     )
   end
 
@@ -44,9 +46,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def accept_user_creation
     if !Rails.application.config.accept_user_creation
       redirect_to unauthenticated_root_path
-      return false
+      false
     else
-      return true
+      true
     end
   end
 end

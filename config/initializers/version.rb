@@ -1,5 +1,5 @@
 module Chouette
   class Application
-    VERSION = '3.4.1'
+    VERSION = '4.0.0 beta'
   end
 end

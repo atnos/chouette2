@@ -42,17 +42,17 @@
             <div class="col-md-12 social_button_alignment">
               <% if Rails.application.secrets.facebook_client_id.present? && Rails.application.secrets.facebook_secret_id.present? %>
                 <p>
-                  <%= link_to image_tag('facebook-login-button.png', width: "200"), user_omniauth_authorize_path(:facebook) %>
+                  <%= link_to image_tag('facebook-login-button.png', width: "200"), user_facebook_omniauth_authorize_path %>
                 </p>
               <% end %>
               <% if Rails.application.secrets.google_client_id.present? && Rails.application.secrets.google_secret_id.present? %>
                 <p>
-                  <%= link_to image_tag('btn_google_signin_dark_normal_web.jpg', width: "200"), user_omniauth_authorize_path(:google_oauth2) %>
+                  <%= link_to image_tag('btn_google_signin_dark_normal_web.jpg', width: "200"), user_google_oauth2_omniauth_authorize_path %>
                 </p>
               <% end %>
               <% if Rails.application.secrets.openid_connect_client_id.present? && Rails.application.secrets.openid_connect_secret_id.present? %>
                 <p>
-                  <%= link_to image_tag('FCboutons-10.jpg', width: "200"), user_omniauth_authorize_path(:openid_connect) %>
+                  <%= link_to image_tag('FCboutons-10.jpg', width: "200"), user_openid_connect_omniauth_authorize_path %>
                 </p>
               <% end %>
             </div>
