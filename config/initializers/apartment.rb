@@ -17,7 +17,7 @@ Apartment.configure do |config|
   #
   # config.excluded_models = %w{Tenant}
   #
-  config.excluded_models = ["Referential", "Organisation", "User", "Delayed::Backend::ActiveRecord::Job", "Api::V1::ApiKey", "RuleParameterSet"]
+  config.excluded_models = %w[Referential Organisation User Delayed::Backend::ActiveRecord::Job Api::V1::ApiKey RuleParameterSet]
 
   # use postgres schemas?
   config.use_schemas = true
@@ -26,7 +26,7 @@ Apartment.configure do |config|
   #config.use_sql = true
 
   # configure persistent schemas (E.g. hstore )
-  config.persistent_schemas = %w{ shared_extensions }
+  config.persistent_schemas = %w[shared_extensions]
 
   # add the Rails environment to database names?
   # config.prepend_environment = true

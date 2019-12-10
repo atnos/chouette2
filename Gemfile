@@ -133,7 +133,7 @@ group :development do
 end
 
 group :test, :development do
-  gem 'pry-rails'
+  gem 'byebug'
   gem 'rspec-rails', '~> 3.4.2'
   gem 'fakeweb'
   gem 'capybara', '~> 2.8.1'
@@ -145,11 +145,6 @@ group :test, :development do
   gem 'transpec'
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 2.8.0'
-end
-
-group :production do
-  gem 'SyslogLogger', require: 'syslog/logger'
-  gem 'daemons'
 end
 
 # IEVKIT
