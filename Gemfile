@@ -101,7 +101,7 @@ gem 'acts-as-taggable-on', '>= 3'
 gem 'acts_as_list', '~> 0.6.0'
 gem 'acts_as_tree', '~> 2.1.0', require: 'acts_as_tree'
 
-gem 'rabl'
+gem 'rabl', '~> 0.13.1'
 
 gem 'delayed_job_active_record'
 # gem 'devise-async'

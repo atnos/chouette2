@@ -346,7 +346,7 @@ GEM
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rabl (0.14.2)
+    rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (1.6.11)
     rack-oauth2 (1.10.1)
@@ -623,7 +623,7 @@ DEPENDENCIES
   puma
   pundit
   quiet_assets (~> 1.0)
-  rabl
+  rabl (~> 0.13.1)
   rails (~> 4.2.11.1)
   rails-assets-bootstrap-sass-official (~> 3.3.7)!
   rails-assets-eonasdan-bootstrap-datetimepicker (~> 3.1.4)!
